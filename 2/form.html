@@ -98,19 +98,21 @@
           <legend class="fieldset__title">Ваше общее впечатление:</legend>
           <ul class="fieldset__list">
             <li class="fieldset__item">
-              <label class="fieldset__impressions-label">
-                <input type="radio" class="fieldset__radio" name="impressions" value="positive" checked>
-                <span>Скорее положительное</span>
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="impressions" value="positive" checked>
+                <span class="radio__label">Скорее положительное</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="form-data__impressions-label" for="negative">Скорее отрицательное
-                <input type="radio" class="fieldset__radio" id="negative" name="impressions" value="negative">
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="impressions" value="negative">
+                <span class="radio__label">Скорее отрицательное</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__impressions-label">Затрудняюсь ответить
-                <input type="radio" class="fieldset__radio" name="impressions" value="dont-know">
+              <label class="fieldset__label radio">
+                <input class="radio__input" type="radio" name="impressions" value="dont-know">
+                <span class="radio__label">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -119,32 +121,38 @@
           <legend class="fieldset__title">Посещенные достопримечательности:</legend>
           <ul class="fieldset__list">
             <li class="fieldset__item">
-              <label class="fieldset__sites-label">Мост Дьявола
-                <input type="checkbox" class="fieldset__checkbox" name="devil" checked>
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="devil" checked>
+                <span class="checkbox__label">Мост Дьявола</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__sites-label">Гора-Колокол
-                <input type="checkbox" class="fieldset__checkbox" name="bell" checked>
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="bell" checked>
+                <span class="checkbox__label">Гора-Колокол</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__sites-label">Слайд-парк
-                <input type="checkbox" class="fieldset__checkbox" name="slide-park" checked>
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="slide-park" checked>
+                <span class="checkbox__label">Слайд-парк</span>
               </label>
             </li>
             <li class="fieldset__item">
-              <label class="fieldset__sites-label">Красные скалы
-                <input type="checkbox" class="fieldset__checkbox" name="red-rocks">
+              <label class="fieldset__label checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks">
               </label>
+              <span class="checkbox__label">Красные скалы</span>
             </li>
           </ul>
         </fieldset>
 
         <div class="form-data__emotions">
           <legend class="form-data__emotions-title">Опишите свои эмоции:</legend>
-          <textarea class="form-data__emotions-input" name="emotions" rows="5"
-            placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="visually-hidden">
+            <textarea class="form-data__emotions-input" name="emotions" rows="5"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
         </div>
 
         <button class="form-data__button" type="submit">Отправить отзыв</button>

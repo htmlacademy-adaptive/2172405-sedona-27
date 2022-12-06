@@ -1,0 +1,41 @@
+.header-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 56px;
+  margin: 0;
+}
+
+
+@media (max-width: 320px) {
+  .header-nav-list {
+    background-color: @light-blue;
+    text-decoration: none;
+  }
+}
+
+.header-nav__list {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-nav__toggle {
+  position: relative;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.nav-toggle {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: none;
+  padding: 17px 20px;
+  cursor: pointer;
+  background-color: transparent;
+}

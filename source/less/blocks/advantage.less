@@ -3,7 +3,7 @@
   width: 320px;
   background-color: #eeeeee;
 
-  &--detailed {
+  &--colored {
     background-color: @light-blue;
   }
 }
@@ -56,4 +56,42 @@
 
 .advantage__description--white {
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage--pic {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantage__pic {
+    display: flex;
+  }
+
+  .advantage__text {
+    width: 256px;
+    padding: 52px 33px 31px;
+  }
+
+  .advantage__title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    .text-size (21px, 26px);
+    text-align: center;
+  }
+
+  .advantage__number {
+    .text-size (14px, 21px);
+    color: #000000;
+  }
+
+  .advantage__number--white {
+    color: @white;
+  }
+
+  .advantage__title--intro {
+    margin-bottom: 35px;
+  }
 }

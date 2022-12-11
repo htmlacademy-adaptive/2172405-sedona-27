@@ -1,3 +1,33 @@
-.nav-list--hidden {
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav__wrapper--hidden {
   display: none;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 17px 0 12px;
+  text-align: center;
+  font-weight: 700;
+  color: @white;
+  text-decoration: none;
+  background-color: @light-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .nav-list__link {
+    .text-size(14px, 21px);
+    font-weight: 700;
+    text-decoration: none;
+    color: @black;
+    background-color: @white;
+  }
+
+  .nav-list__item--current .nav-list__link {
+    color: #766357;
+  }
 }

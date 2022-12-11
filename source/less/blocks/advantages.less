@@ -3,7 +3,7 @@
 }
 
 .advantages__intro {
-  padding-bottom: 16px;
+  padding: 0 18px 16px;
 }
 
 .advantages__list {
@@ -11,4 +11,11 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__intro {
+    padding: 0 124px 55px;
+  }
 }

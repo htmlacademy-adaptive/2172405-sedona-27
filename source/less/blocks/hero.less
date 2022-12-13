@@ -11,11 +11,45 @@
   background-size: 280%;
 }
 
+@media (min-width: @tablet-width) {
+  .hero {
+    background-size: 180%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero {
+    background-size: 100%;
+  }
+}
+
 .hero__wrapper {
   padding-top: 52px;
   padding-bottom: 67px;
 }
 
+@media (min-width: @tablet-width) {
+  .hero__wrapper {
+    padding-top: 95px;
+    padding-bottom: 117px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hero__wrapper {
+    padding-top: 101px;
+    padding-bottom: 120px;
+  }
+}
+
 .hero__image {
+  display: block;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .hero__image {
+    width: 457px;
+    height: 78px;
+  }
 }

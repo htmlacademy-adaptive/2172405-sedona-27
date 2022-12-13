@@ -20,32 +20,51 @@
   width: 280px;
   padding: 16px 16px 16px 16px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: @lighter-grey;
   margin-bottom: 16px;
   font-family: inherit;
   .text-size(18px, 26px);
   font-weight: 700;
 }
 
-.fieldset__input--short {
-  width: 222px;
+.fieldset__input-short {
+  padding-right: 70px;
 }
+
 
 .fieldset__input-phone {
   position: relative;
+}
+
+.fieldset__input-phone::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: @light-grey;
+  background-image: url(../img/vectors/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fieldset__input-email {
   position: relative;
 }
 
-.fieldset__icon-phone,
-.fieldset__icon-email {
+.fieldset__input-email::after {
+  content: "";
   position: absolute;
   width: 58px;
   height: 58px;
   top: 0;
-  left: 222px;
+  right: 0;
   padding: 20px;
-  background-color: #e6e6e6;
+  background-color: @light-grey;
+  background-image: url(../img/vectors/mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
+

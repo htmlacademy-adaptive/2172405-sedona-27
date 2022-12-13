@@ -1,12 +1,55 @@
 .video-presentation {
+  padding: 17px 20px 0 17px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.video-presentation__video {
+@media (min-width: @tablet-width) {
+  .video-presentation {
+    padding: 58px 60px 40px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation {
+    padding: 64px 200px 40px 200px;
+  }
+}
+
+.video {
   display: block;
   position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__video {
+    min-width: 648px;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation__video {
+    min-width: 800px;
+    min-height: 500px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video__clip {
+    display: block;
+    width: 648px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__clip {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .video-presentation__title {
@@ -15,15 +58,32 @@
   .text-size(21px, 26px);
   font-weight: 700;
   text-align: center;
+  padding-left: 17px;
+  padding-right: 17px;
   margin-bottom: 30px;
 }
 
 .video-presentation__message {
   margin: 0;
-  padding: 0;
+  margin-bottom: 38px;
+  padding-left: 17px;
+  padding-right: 17px;
   .text-size (14px, 21px);
   text-align: center;
-  margin-bottom: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__message {
+    padding-left: 101px;
+    padding-right: 101px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__message {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
 }
 
 .video-presentation__play-button {
@@ -34,4 +94,18 @@
   left: 116px;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .video-presentation__play-button {
+    top: 223px;
+    left: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-presentation__play-button {
+    top: 223px;
+    left: 376px;
+  }
 }

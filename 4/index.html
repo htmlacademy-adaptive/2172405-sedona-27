@@ -9,7 +9,7 @@
   <base href="https://htmlacademy-adaptive.github.io/2172405-sedona-27/4/">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <div class="page-container">
     <header class="page-header">
       <a class="page-header__logo">
@@ -17,17 +17,15 @@
           <img src="img/vectors/logo.svg" width="185" height="96" alt="лого города Седона.">
         </div>
       </a>
-      <nav class="header-nav">
+      <nav class="header-nav header-vav__closed header-nav--nojs">
         <div class="header-nav__wrapper">
-          <ul class="header-nav__list-left nav-list">
+          <ul class="header-nav__list nav-list">
             <li class="nav-list__item  nav-list__item--current">
-              <a class="nav-list__link" href="#">Главная</a>
+              <a class="nav-list__link">Главная</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="catalog.html">Фото и видео</a>
             </li>
-          </ul>
-          <ul class="header-nav__list-right nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="form.html">Форма отзыва</a>
             </li>
@@ -59,12 +57,12 @@
             <p class="advantage__message">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           <ul class="advantages__list">
-            <li class="advantages__item advantage advantage--colored advantage--pic">
-              <div class="advantage__pic">
+            <li class="advantages__item advantage advantage--wide-services">
+              <div class="advantage__colored">
                 <div class="advantage__text">
-                  <h3 class="advantage__title advantage__title--white">Настоящий городок</h3>
-                  <p class="advantage__number advantage__number--white"> – №1 –</p>
-                  <p class="advantage__description advantage__description--white">Седона не аттракцион для
+                  <h3 class="advantage__title">Настоящий городок</h3>
+                  <p class="advantage__number"> – №1 –</p>
+                  <p class="advantage__description">Седона не аттракцион для
                     туристов, там течет своя жизнь</p>
                 </div>
                 <div class="advantage__image">
@@ -74,50 +72,52 @@
               </div>
               <div class="advantages-services services">
                 <ul class="services__list">
-                  <li class="services__item services__item--accomodation">
+                  <li class="services__item">
                     <h3 class="services__title">Жилье</h3>
                     <p class="services__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
-                  <li class="services__item services__item--food">
+                  <li class="services__item">
                     <h3 class="services__title">Еда</h3>
                     <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                     </p>
                   </li>
-                  <li class="services__item services__item--souvenirs">
+                  <li class="services__item">
                     <h3 class="services__title">Сувениры</h3>
                     <p class="services__description">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="advantages__item advantage advantage--colored">
-              <div class="advantage__text">
-                <h3 class="advantage__title advantage__title--white">Там есть мост дьявола!</h3>
-                <p class="advantage__number advantage__number--white"> – №2 –</p>
-                <p class="advantage__description advantage__description--white">Да, по нему можно пройти! Если вы
-                  осмелитесь, конечно</p>
-              </div>
+            <li class="advantages__item advantage advantage--wide">
               <div class="advantage__image">
                 <img class="advantage__photo" src="img/photos/photo-bridge.jpeg" width="520" height="260"
                   alt="фото моста дьявола.">
               </div>
+              <div class="advantage__colored">
+                <div class="advantage__text">
+                  <h3 class="advantage__title">Там есть мост дьявола!</h3>
+                  <p class="advantage__number"> – №2 –</p>
+                  <p class="advantage__description">Да, по нему можно пройти! Если вы
+                    осмелитесь, конечно</p>
+                </div>
+              </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text">
+              <div class="advantage__text advantage__text-base">
                 <h3 class="advantage__title">Небольшая площадь</h3>
                 <p class="advantage__number"> – №3 –</p>
                 <p class="advantage__description">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text">
+              <div class="advantage__text advantage__text-base">
                 <h3 class="advantage__title">Красивая дорога</h3>
                 <p class="advantage__number"> – №4 –</p>
                 <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages__item advantage">
-              <div class="advantage__text">
+              <div class="advantage__text advantage__text-base">
                 <h3 class="advantage__title">Мало туристов</h3>
                 <p class="advantage__number"> – №3 –</p>
                 <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -137,7 +137,7 @@
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677059.593816956!2d-112.60812680948847!3d34.81834263554427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669466399304!5m2!1sru!2sru"
-          width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+          width="1200" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </main>
@@ -147,7 +147,7 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <g clip-path="url(#a)">
@@ -164,7 +164,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <path
@@ -174,7 +174,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <path

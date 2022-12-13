@@ -9,7 +9,7 @@
   <base href="https://htmlacademy-adaptive.github.io/2172405-sedona-27/4/">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <div class="page-container">
     <header class="page-header">
       <a class="page-header__logo">
@@ -17,17 +17,15 @@
           <img src="img/vectors/logo.svg" width="185" height="96" alt="лого города Седона.">
         </div>
       </a>
-      <nav class="header-nav">
+      <nav class="header-nav header-vav__closed header-nav--nojs">
         <div class="header-nav__wrapper">
-          <ul class="header-nav__list-left nav-list">
+          <ul class="header-nav__list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item nav-list__item--current">
-              <a class="nav-list__link" href="#">Фото и видео</a>
+              <a class="nav-list__link">Фото и видео</a>
             </li>
-          </ul>
-          <ul class="header-nav__list-right nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="form.html">Форма отзыва</a>
             </li>
@@ -58,68 +56,73 @@
       </section>
       <section class="catalog-photos">
         <ul class="catalog-photos__list">
-          <li class="catalog-photos__item">
+          <li class="catalog-photos__item catalog-photos__item--wide">
             <a class="catalog-photos__image catalog-photos__image--wide" href="#">
-              <img class="catalog-photos__picture" src="img/photos/photo-1-mobile.jpg" width="280" height="280"
-                alt="пейзаж с дорогой и горами.">
+              <img class="catalog-photos__picture catalog-photos__picture--wide" src="img/photos/photo-1-mobile.jpg"
+                width="280" height="280" alt="пейзаж с дорогой и горами.">
             </a>
-            <div class="catalog-photos__info">
-              <p class="catalog-photos__title">Неродные просторы</p>
-              <p class="catalog-photos__author">Автор фото: <span>Борис</span></p>
+            <div class="catalog-photos__legend">
+              <div class="catalog-photos__info">
+                <p class="catalog-photos__title">Неродные просторы</p>
+                <p class="catalog-photos__author">Автор фото: <span>Борис</span></p>
+              </div>
+              <a class="catalog-photos__stats" href="#">
+                <svg class="catalog-photos__like" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+                <p class="catalog-photos__likes-number">1350</p>
+              </a>
             </div>
-            <a class="catalog-photos__stats" href="#">
-              <button class="catalog-photos__like" type="button"><img src="img/vectors/like-icon.svg" width="23"
-                  height="21" alt="кнопка для лайка">
-              </button>
-              <p class="catalog-photos__likes-number">1350</p>
-            </a>
           </li>
           <li class="catalog-photos__item">
             <a class="catalog-photos__image" href="#">
               <img class="catalog-photos__picture" src="img/photos/photo-2-mobile.jpg" width="280" height="280"
                 alt="местные растения.">
             </a>
-            <div class="catalog-photos__info">
-              <p class="catalog-photos__title">Местная растительность</p>
-              <p class="catalog-photos__author">Автор фото: <span>Сергей</span></p>
+            <div class="catalog-photos__legend">
+              <div class="catalog-photos__info">
+                <p class="catalog-photos__title">Местная растительность</p>
+                <p class="catalog-photos__author">Автор фото: <span>Сергей</span></p>
+              </div>
+              <a class="catalog-photos__stats" href="#">
+                <svg class="catalog-photos__like" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+                <p class="catalog-photos__likes-number">143</p>
+              </a>
             </div>
-            <a class="catalog-photos__stats" href="#">
-              <button class="catalog-photos__like" type="button"><img src="img/vectors/like-icon.svg" width="23"
-                  height="21" alt="кнопка для лайка">
-              </button>
-              <p class="catalog-photos__likes-number">143</p>
-            </a>
           </li>
           <li class="catalog-photos__item">
             <a class="catalog-photos__image" href="#">
               <img class="catalog-photos__picture" src="img/photos/photo-3-mobile.jpg" width="280" height="280"
                 alt="дорога в горах.">
             </a>
-            <div class="catalog-photos__info">
-              <p class="catalog-photos__title">Дорога на север</p>
-              <p class="catalog-photos__author">Автор фото: <span>Петр</span></p>
+            <div class="catalog-photos__legend catalog-photos__legend--colored">
+              <div class="catalog-photos__info">
+                <p class="catalog-photos__title">Дорога на север</p>
+                <p class="catalog-photos__author">Автор фото: <span>Петр</span></p>
+              </div>
+              <a class="catalog-photos__stats" href="#">
+                <svg class="catalog-photos__like" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+                <p class="catalog-photos__likes-number">96</p>
+              </a>
             </div>
-            <a class="catalog-photos__stats" href="#">
-              <button class="catalog-photos__like" type="button"><img src="img/vectors/like-icon.svg" width="23"
-                  height="21" alt="кнопка для лайка">
-              </button>
-              <p class="catalog-photos__likes-number">96</p>
-            </a>
           </li>
           <li class="catalog-photos__item">
             <a class="catalog-photos__image" href="#">
               <img class="catalog-photos__picture" src="img/photos/photo-4-mobile.jpg" width="280" height="280"
                 alt="мост дьявола.">
             </a>
-            <div class="catalog-photos__info">
-              <p class="catalog-photos__title">Мост дьявола</p>
-              <p class="catalog-photos__author">Автор фото: <span>Антон</span></p>
+            <div class="catalog-photos__legend">
+              <div class="catalog-photos__info">
+                <p class="catalog-photos__title">Мост дьявола</p>
+                <p class="catalog-photos__author">Автор фото: <span>Антон</span></p>
+              </div>
+              <a class="catalog-photos__stats" href="#">
+                <svg class="catalog-photos__like" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"/></svg>
+                <p class="catalog-photos__likes-number">234</p>
+              </a>
             </div>
-            <a class="catalog-photos__stats" href="#">
-              <button class="catalog-photos__like" type="button"><img src="img/vectors/like-icon.svg" width="23"
-                  height="21" alt="кнопка для лайка"></button>
-              <p class="catalog-photos__likes-number">234</p>
-            </a>
           </li>
         </ul>
       </section>
@@ -127,14 +130,14 @@
         <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
         <p class="video-presentation__message">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
-        <a class="video-presentation__video video" href="#">
-          <img class="video__video" src="img/photos/video-mobile.jpg" alt="видеопрезентация о городе Седона">
+        <div class="video-presentation__video video" href="#">
+          <img class="video__clip" src="img/photos/video-mobile.jpg" alt="видеопрезентация о городе Седона">
           <button class="video-presentation__play-button" type="button">
             <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M48 27 0 54V0l48 27Z" fill="#fff" fill-opacity=".7" />
             </svg>
           </button>
-        </a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -143,7 +146,7 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <g clip-path="url(#a)">
@@ -160,7 +163,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link" href="https://t.me/htmlacademy">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <path
@@ -170,7 +173,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#81B3D2" d="M0 0h48v48H0z" />
                   <path

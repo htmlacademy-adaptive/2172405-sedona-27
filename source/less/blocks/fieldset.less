@@ -1,3 +1,25 @@
+@media (min-width: @tablet-width) {
+  .fieldset {
+    width: 280px;
+  }
+
+  .fieldset:first-child {
+    margin-right: 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset:first-child {
+    margin-right: 128px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset--wide {
+    width: 960px;
+  }
+}
+
 .fieldset__title {
   margin: 0;
   padding: 0;
@@ -6,9 +28,85 @@
   font-weight: 700;
 }
 
+@media (min-width: @tablet-width) {
+  .fieldset__title {
+    .text-size(21px, 26px);
+  }
+}
+
 .fieldset__list {
   padding: 0;
+  padding-top: 14px;
+  margin: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset__list {
+    padding-top: 28px;
+  }
+
+  .fieldset__list--wide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .fieldset__list--wider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 84px;
+    padding-right: 84px;
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset__list--wide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .fieldset__list--wider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 44px;
+    padding-right: 44px;
+    column-gap: 30px;
+  }
+
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset__item--radio {
+    width: 247px;
+  }
+}
+
+.fieldset__item--checkbox:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset__item--checkbox:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__title--checkbox {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset__title--checkbox {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
 }
 
 .fieldset__label {
@@ -27,10 +125,21 @@
   font-weight: 700;
 }
 
+@media (min-width: @desktop-width) {
+  .fieldset__input {
+    width: 430px;
+  }
+}
+
 .fieldset__input-short {
   padding-right: 70px;
 }
 
+@media (min-width: @desktop-width) {
+  .fieldset__input-short {
+    width: 402px;
+  }
+}
 
 .fieldset__input-phone {
   position: relative;

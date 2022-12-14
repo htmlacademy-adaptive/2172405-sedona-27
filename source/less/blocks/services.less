@@ -18,7 +18,25 @@
 
 @media (min-width: @tablet-width) {
   .services__item {
-    padding: 158px 33px 60px;
+    width: 256px;
+    padding: 158px 40px 60px;
+  }
+
+  .services__item:nth-child(-n+2) {
+    margin-bottom: 0;
+    padding: 158px 40px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__item {
+    width: 400px;
+    padding: 169px 60px 69px;
+  }
+
+  .services__item:nth-child(-n+2) {
+    margin-bottom: 0;
+    padding: 169px 60px 69px;
   }
 }
 

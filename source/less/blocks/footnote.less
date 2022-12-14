@@ -1,9 +1,45 @@
+@media (min-width: @tablet-width) {
+  .footnote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footnote {
+    padding-left: 96px;
+    padding-right: 96px;
+    margin-bottom: 64px;
+  }
+}
+
 .footnote__button {
   font-family: inherit;
   text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .footnote__button {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footnote__button {
+    width: 384px;
+  }
 }
 
 .footnote__message {
   .text-size(12px, 21px);
   color: rgba(51, 51, 51, 0.6);
+}
+
+@media (min-width: @tablet-width) {
+  .footnote__message {
+    .text-size(14px, 21px);
+  }
 }

@@ -2,12 +2,31 @@
   padding: 36px 20px 28px;
 }
 
+@media (min-width: @tablet-width) {
+  .form-intro {
+    padding: 64px 166px 102px 167px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-intro {
+    padding: 115px 382px 67px 382px;
+  }
+}
+
 .form-intro__title {
   margin: 0;
   padding: 0;
   .text-size (18px, 26px);
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-intro__title {
+    .text-size (30px, 26px);
+    margin-bottom: 20px;
+  }
 }
 
 .form-intro__message {

@@ -1,0 +1,41 @@
+.main-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  color: @white;
+  background-color: @black;
+  background-image: url("../img/photos/hero-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.main-hero__wrapper {
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-hero__wrapper {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-hero__wrapper {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
+}
+
+.main-hero__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .main-hero__image {
+    width: 460px;
+    height: 350px;
+  }
+}

@@ -1,0 +1,52 @@
+.services__list {
+  padding: 31px 18px 46px 65px;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .services__list {
+    display: flex;
+    padding: 0;
+  }
+}
+
+.services__item:not(:last-child) {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+}
+
+@media (min-width: @tablet-width) {
+  .services__item {
+    padding: 158px 33px 60px;
+  }
+}
+
+.services__title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  .text-size (18px, 26px);
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .services__title {
+    text-align: center;
+    .text-size (21px, 26px);
+  }
+}
+
+.services__description {
+  margin: 0;
+  padding: 0;
+  color: @black;
+  text-align: left;
+  .text-size (14px, 21px);
+}
+
+@media (min-width: @tablet-width) {
+  .services__description {
+    text-align: center;
+  }
+}

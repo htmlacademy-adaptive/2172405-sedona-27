@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  min-height: 56px;
   background-color: @white;
   color: @black;
   display: flex;
@@ -6,20 +8,8 @@
 
 .page-header__logo {
   position: absolute;
-  margin-left: 67px;
-  margin-right: 68px;
+  left: 50%;
+  transform: translateX(-50%);
   min-height: 96px;
   min-width: 185px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__logo {
-    margin-left: 291px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__logo {
-    margin-left: 507px;
-  }
 }

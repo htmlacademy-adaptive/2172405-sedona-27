@@ -7,50 +7,118 @@
 
 @media (min-width: @tablet-width) {
   .header-nav {
-    width: 768px;
+    min-width: 768px;
     justify-content: space-between;
   }
 
-  .nav-toggle {
+  .header-nav__toggle {
     opacity: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header-nav {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
 
-.header-nav__wrapper {
-  min-height: 56px;
+.header-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 63px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-nav--closed .header-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: @light-blue;
+  box-shadow: 0 8px 0 0 @light-blue, 0 16px 0 0 @light-blue;
+}
+
+.header-nav--opened .header-nav__toggle::after,
+.header-nav--nojs .header-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/vectors/icon-cross.svg");
+  background-repeat: no-repeat;
+}
+
+.header-nav--opened .header-nav__toggle:hover::after {
+  opacity: 50%;
+}
+
+.header-nav--opened .header-nav__toggle:active::after {
+  opacity: 30%;
+}
+
+
+.header-nav--closed .header-nav__toggle:hover::before {
+  background-color: fade(@light-blue, 70%);
+  box-shadow: 0 8px 0 0 fade(@light-blue, 70%), 0 16px 0 0 fade(@light-blue, 70%);
+}
+
+.header-nav--closed .header-nav__toggle:active::before {
+  background-color: fade(@light-blue, 50%);
+  box-shadow: 0 8px 0 0 fade(@light-blue, 50%), 0 16px 0 0 fade(@light-blue, 50%);
+}
+
+.header-nav--closed .nav-list__item {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .header-nav--closed .nav-list__item {
+    display: block;
+  }
+}
+
+.header-nav--nojs .header-nav__toggle::before {
+  display: none;
+}
+
+.header-nav--nojs .header-nav__toggle::after {
+  display: none;
+}
+
+.header-nav--nojs .header-nav__wrapper {
   width: 100%;
+}
+
+.header-nav--opened .header-nav__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.header-nav--opened .header-nav__toggle::before {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .header-nav__wrapper {
     margin: 0;
+    width: 100%;
   }
 }
 
 .header-nav__list {
   padding: 0;
   margin: 0;
-  background-color: @light-blue;
-}
-
-.header-nav__toggle {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-}
-
-.nav-toggle {
-  display: block;
-  width: 56px;
-  height: 56px;
-  border: none;
-  padding: 17px 20px;
-  cursor: pointer;
-  background-color: transparent;
 }

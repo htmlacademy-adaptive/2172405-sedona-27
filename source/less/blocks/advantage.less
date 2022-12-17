@@ -4,10 +4,29 @@
   background-color: #eeeeee;
 }
 
+.advantage__text-base {
+  position: relative;
+}
+
+.advantage:not(:last-child) .advantage__text-base::after {
+  content: "";
+  position: absolute;
+  width: 84%;
+  height: 1px;
+  background-color: @grey;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: @tablet-width) {
   .advantage {
     width: 256px;
     min-height: 256px;
+  }
+
+  .advantage:not(:last-child) .advantage__text-base::after {
+    display: none;
   }
 }
 
@@ -110,8 +129,8 @@
 
 @media (min-width: @desktop-width) {
   .advantage__title {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 

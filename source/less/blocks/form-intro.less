@@ -1,10 +1,26 @@
 .form-intro {
   padding: 36px 20px 28px;
+  position: relative;
+}
+
+.form-intro::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: @tablet-width) {
   .form-intro {
     padding: 64px 166px 102px 167px;
+  }
+
+  .form-intro::after {
+    display: none;
   }
 }
 
@@ -19,7 +35,7 @@
   padding: 0;
   .text-size (18px, 26px);
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: @tablet-width) {

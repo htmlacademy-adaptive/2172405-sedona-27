@@ -1,3 +1,19 @@
+.fieldset--short {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset--short::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    background-color: #e5e5e5;
+    top: -25px;
+    left: -44px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .fieldset {
     width: 280px;

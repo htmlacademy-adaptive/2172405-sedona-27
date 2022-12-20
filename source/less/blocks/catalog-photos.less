@@ -26,8 +26,31 @@
 }
 
 .catalog-photos__item {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 30px;
+}
+
+.catalog-photos__item::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.catalog-photos__item:first-child::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: @tablet-width) {
@@ -35,6 +58,14 @@
     width: 324px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .catalog-photos__item::after {
+    display: none;
+  }
+
+  .catalog-photos__item:first-child::before {
+    display: none;
   }
 }
 

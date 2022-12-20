@@ -1,12 +1,25 @@
 .services__list {
-  padding: 31px 18px 46px 65px;
+  padding: 31px 18px 46px 18px;
   list-style: none;
-}
 
-@media (min-width: @tablet-width) {
-  .services__list {
+  @media (min-width: @tablet-width) {
     display: flex;
     padding: 0;
+  }
+}
+
+.services__item {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 256px;
+    padding: 62px 40px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 72px 60px 69px;
   }
 }
 
@@ -16,40 +29,37 @@
   margin-bottom: 33px;
 }
 
-@media (min-width: @tablet-width) {
-  .services__item {
-    width: 256px;
-    padding: 158px 40px 60px;
+.services__item:nth-child(-n+2) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 62px 40px 60px;
   }
 
-  .services__item:nth-child(-n+2) {
+  @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    padding: 158px 40px 60px;
+    padding: 72px 60px 69px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .services__item {
-    width: 400px;
-    padding: 169px 60px 69px;
+.services__text {
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
   }
 
-  .services__item:nth-child(-n+2) {
-    margin-bottom: 0;
-    padding: 169px 60px 69px;
+  @media (min-width: @desktop-width) {
+    margin-top: 25px;
   }
 }
 
 .services__title {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   text-align: left;
   .text-size (18px, 26px);
   color: @black;
-}
 
-@media (min-width: @tablet-width) {
-  .services__title {
+  @media (min-width: @tablet-width) {
     text-align: center;
     .text-size (21px, 26px);
   }
@@ -61,10 +71,28 @@
   color: @black;
   text-align: left;
   .text-size (14px, 21px);
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .services__description {
-    text-align: center;
+.services__icon {
+  margin-right: 8px;
+  margin-top: -5px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+.services__icon svg.icon {
+  width: 40px;
+  height: 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 70px;
   }
 }

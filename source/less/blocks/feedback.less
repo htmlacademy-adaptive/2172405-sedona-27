@@ -1,6 +1,8 @@
-@media (min-width: @tablet-width) {
-  .feedback {
+.feedback {
+  @media (min-width: @tablet-width) {
+    position: relative;
     width: 100%;
+    z-index: 1;
   }
 }
 
@@ -10,21 +12,31 @@
   text-align: center;
   .text-size(18px, 26px);
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    .text-size(21px, 26px);
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .feedback__title {
-    .text-size(21px, 26px);
+.feedback__title::before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 13px;
+    z-index: -1;
   }
 }
 
 .feedback__block {
   margin-top: 20px;
   margin-bottom: 56px;
-}
 
-@media (min-width: @tablet-width) {
-  .feedback__block {
+  @media (min-width: @tablet-width) {
     margin-bottom: 48px;
   }
 }
@@ -37,6 +49,8 @@
   font-family: inherit;
   border: none;
   resize: none;
+  .text-size(18px, 26px);
+  font-weight: 700;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +67,19 @@
     margin-left: 96px;
     margin-right: 96px;
   }
+}
+
+.feedback__input:hover {
+  background-color: #e5e5e5;
+}
+
+.feedback__input:focus {
+  outline: none;
+}
+
+.feedback__input:active {
+  background-color: @white;
+  outline: 4px solid #e5e5e5;
 }
 
 ::-webkit-input-placeholder {

@@ -34,6 +34,14 @@
   background-position: center center;
 }
 
+.checkbox__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__label:active::before {
+  background-color: #d5d5d5;
+}
+
 .checkbox__label::after {
   content: "";
   top: 0;
@@ -44,6 +52,14 @@
   background-image: url("../img/vectors/tick.svg");
   background-repeat: no-repeat;
   opacity: 0;
+}
+
+.checkbox__label:active::after {
+  opacity: 30%;
+}
+
+.checkbox__input:checked + .checkbox__label:active::after {
+  opacity: 30%;
 }
 
 .checkbox__input:checked + .checkbox__label::after {

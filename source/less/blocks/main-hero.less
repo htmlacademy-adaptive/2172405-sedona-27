@@ -7,6 +7,12 @@
   background-color: @black;
   background-image: url("../img/photos/hero-background.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 25%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photos/hero-background@2x.jpg");
+    background-size: 1200px auto;
+  }
 }
 
 .main-hero__wrapper {
@@ -14,6 +20,16 @@
   width: 100%;
   padding-top: 90px;
   padding-bottom: 85px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
 }
 
 .main-hero__wrapper::after {
@@ -24,21 +40,6 @@
   height: 57px;
   bottom: 0;
   background-position: center;
-}
-
-
-@media (min-width: @tablet-width) {
-  .main-hero__wrapper {
-    padding-top: 77px;
-    padding-bottom: 91px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-hero__wrapper {
-    padding-top: 78px;
-    padding-bottom: 90px;
-  }
 }
 
 .main-hero__image {

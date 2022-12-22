@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -43,7 +47,8 @@
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <div class="main-hero">
         <div class="main-hero__wrapper">
-          <img class="main-hero__image" src="img/vectors/welcome-message.svg" alt="Приветствие гостям города Седоны.">
+          <img class="main-hero__image" src="img/vectors/welcome-message.svg" width="282" height="214"
+            alt="Приветствие гостям города Седоны.">
         </div>
       </div>
       <section class="advantages">
@@ -63,8 +68,12 @@
                     туристов, там течет своя жизнь</p>
                 </div>
                 <div class="advantage__image">
-                  <img class="advantage__photo" src="img/photos/photo-city.jpeg" width="520" height="260"
-                    alt="фото городка Седоны.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photos/photo-city-desktop.jpg 1x, img/photos/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photos/photo-city-tablet.jpg 1x, mg/photos/photo-city-tablet@2x.jpg 2x">
+                    <img class="advantage__photo" src="img/photos/photo-city-mobile.jpg" srcset="img/photos/photo-city-mobile2x.jpg 2x" width="320" height="260"
+                      alt="фото городка Седоны.">
+                  </picture>
                 </div>
               </div>
               <div class="advantages-services services">

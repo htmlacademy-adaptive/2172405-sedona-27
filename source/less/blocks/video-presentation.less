@@ -3,16 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation {
+  @media (min-width: @tablet-width) {
     padding: 58px 60px 40px 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation {
+  @media (min-width: @desktop-width) {
     padding: 64px 200px 40px 200px;
   }
 }
@@ -22,33 +18,28 @@
   position: relative;
 }
 
-@media (min-width: @tablet-width) {
-  .video-presentation__video {
+.video-presentation__video {
+  @media (min-width: @tablet-width) {
     min-width: 648px;
     min-height: 500px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation__video {
+  @media (min-width: @desktop-width) {
     min-width: 800px;
     min-height: 500px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .video__clip {
+.video__clip {
+  @media (min-width: @tablet-width) {
     display: block;
     width: 648px;
     height: 500px;
     object-fit: cover;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video__clip {
-    width: 100%;
-    object-fit: cover;
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
@@ -70,17 +61,13 @@
   padding-right: 17px;
   .text-size (14px, 21px);
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__message {
+  @media (min-width: @tablet-width) {
     padding-left: 101px;
     padding-right: 101px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__message {
+  @media (min-width: @desktop-width) {
     padding-left: 170px;
     padding-right: 170px;
   }
@@ -94,17 +81,13 @@
   left: 116px;
   background-color: transparent;
   cursor: pointer;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__play-button {
+  @media (min-width: @tablet-width) {
     top: 223px;
     left: 300px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation__play-button {
+  @media (min-width: @desktop-width) {
     top: 223px;
     left: 376px;
   }

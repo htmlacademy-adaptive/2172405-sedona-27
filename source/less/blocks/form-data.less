@@ -23,12 +23,8 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
-  border: none;
-}
-
-.form-data__fieldset:nth-child(3) {
   padding-bottom: 39px;
+  border: none;
 }
 
 .form-data__fieldset::after {
@@ -51,7 +47,6 @@
     padding-right: 43px;
     margin-right: 44px;
     margin-bottom: 48px;
-    // border-right: 1px solid #dbdbdb;
     padding-bottom: 0;
   }
 
@@ -61,24 +56,9 @@
   }
 }
 
-.fieldset--short::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 338px;
-    background-color: #dbdbdb;
-    top: -27px;
-    left: -44px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: -27px;
-    left: -64px;
-  }
-}
-
 .form-data__feedback {
+  border: none;
+  width: 100%;
   margin: 0;
   padding: 0;
 }

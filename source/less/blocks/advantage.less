@@ -50,9 +50,10 @@
 
 .advantage__text {
   margin: 0;
-  padding: 37px 20px 40px;
+  padding: 37px 32px 40px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     width: 256px;
     padding: 52px 33px 31px;
   }
@@ -66,6 +67,10 @@
 .advantage__text-base {
   @media (min-width: @tablet-width) {
     padding: 52px 33px 52px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,8 +79,6 @@
 }
 
 .advantage:not(:last-child) .advantage__text-base {
-  margin-left: 18px;
-  margin-right: 18px;
   border-bottom: 1px solid #d6d6d6;
 
   @media (min-width: @tablet-width) {
@@ -158,4 +161,12 @@
   font-weight: 400;
   .text-size (14px, 21px);
   text-align: center;
+}
+
+.advantage__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
 }

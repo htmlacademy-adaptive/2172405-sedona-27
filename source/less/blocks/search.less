@@ -1,6 +1,6 @@
 .search {
   text-align: center;
-  padding: 40px 20px 50px;
+  padding: 40px 19px 50px;
 
   @media (min-width: @tablet-width) {
     padding: 61px 155px 58px 155px;
@@ -13,6 +13,14 @@
 
 .search__wrapper {
   margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .search__title {
@@ -22,11 +30,20 @@
 
   @media (min-width: @tablet-width) {
     .text-size (30px, 26px);
+    margin-bottom: 32px;
   }
 }
 
 .search__description {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
+}
+
+.search__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
 }

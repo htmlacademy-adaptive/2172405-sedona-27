@@ -1,5 +1,9 @@
 .advantages {
   margin-top: 32px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
+  }
 }
 
 .advantages__base {
@@ -12,13 +16,17 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .advantages__intro {
-  padding: 0 18px 16px;
+  padding: 0 27px 16px 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 124px 55px;
+    padding: 15px 122px 55px 121px;
   }
 
   @media (min-width: @desktop-width) {

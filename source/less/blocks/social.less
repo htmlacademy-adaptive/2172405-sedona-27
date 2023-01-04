@@ -11,7 +11,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
@@ -20,6 +20,17 @@
     gap: 6px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   padding-left: 20px;
+  // }
+}
+
+.social__list--alternate {
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    bottom: -5px;
   }
 }
 

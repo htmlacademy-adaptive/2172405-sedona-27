@@ -1,15 +1,15 @@
 .video-presentation {
-  padding: 17px 20px 0 17px;
+  padding: 17px 17px 28px 17px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 58px 60px 40px 60px;
+    padding: 57px 60px 40px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 64px 200px 40px 200px;
+    padding: 61px 200px 40px 200px;
   }
 }
 
@@ -31,8 +31,9 @@
 }
 
 .video__clip {
+  display: block;
+
   @media (min-width: @tablet-width) {
-    display: block;
     width: 648px;
     height: 500px;
     object-fit: cover;
@@ -46,12 +47,17 @@
 .video-presentation__title {
   padding: 0;
   margin: 0;
-  .text-size(21px, 26px);
+  .text-size(18px, 26px);
   font-weight: 700;
   text-align: center;
   padding-left: 17px;
   padding-right: 17px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    .text-size(30px, 26px);
+    margin-bottom: 30px;
+  }
 }
 
 .video-presentation__message {
@@ -65,11 +71,13 @@
   @media (min-width: @tablet-width) {
     padding-left: 101px;
     padding-right: 101px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 170px;
     padding-right: 170px;
+    margin-bottom: 88px;
   }
 }
 

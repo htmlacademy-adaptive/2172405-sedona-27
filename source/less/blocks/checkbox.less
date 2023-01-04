@@ -25,8 +25,8 @@
 .checkbox__label::before {
   content: "";
   position: absolute;
-  top: -15px;
-  left: 0;
+  top: -12px;
+  left: 3px;
   min-width: 46px;
   min-height: 46px;
   border-radius: 4px;
@@ -44,14 +44,18 @@
 
 .checkbox__label::after {
   content: "";
-  top: 0;
-  left: 13px;
+  top: 3px;
+  left: 11px;
   position: absolute;
   width: 22px;
   height: 16px;
   background-image: url("../img/vectors/tick.svg");
   background-repeat: no-repeat;
   opacity: 0;
+
+  @media (min-width: @desktop-width) {
+    left: 14px;
+  }
 }
 
 .checkbox__label:active::after {

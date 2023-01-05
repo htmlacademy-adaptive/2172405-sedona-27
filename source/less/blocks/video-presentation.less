@@ -1,19 +1,15 @@
 .video-presentation {
-  padding: 17px 20px 0 17px;
+  padding: 17px 17px 28px 17px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation {
-    padding: 58px 60px 40px 60px;
+  @media (min-width: @tablet-width) {
+    padding: 57px 60px 40px 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation {
-    padding: 64px 200px 40px 200px;
+  @media (min-width: @desktop-width) {
+    padding: 61px 200px 40px 200px;
   }
 }
 
@@ -22,45 +18,46 @@
   position: relative;
 }
 
-@media (min-width: @tablet-width) {
-  .video-presentation__video {
+.video-presentation__video {
+  @media (min-width: @tablet-width) {
     min-width: 648px;
     min-height: 500px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation__video {
+  @media (min-width: @desktop-width) {
     min-width: 800px;
     min-height: 500px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .video__clip {
-    display: block;
+.video__clip {
+  display: block;
+
+  @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
     object-fit: cover;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video__clip {
-    width: 100%;
-    object-fit: cover;
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
 .video-presentation__title {
   padding: 0;
   margin: 0;
-  .text-size(21px, 26px);
+  .text-size(18px, 26px);
   font-weight: 700;
   text-align: center;
   padding-left: 17px;
   padding-right: 17px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    .text-size(30px, 26px);
+    margin-bottom: 30px;
+  }
 }
 
 .video-presentation__message {
@@ -70,19 +67,17 @@
   padding-right: 17px;
   .text-size (14px, 21px);
   text-align: center;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__message {
+  @media (min-width: @tablet-width) {
     padding-left: 101px;
     padding-right: 101px;
+    margin-bottom: 90px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__message {
+  @media (min-width: @desktop-width) {
     padding-left: 170px;
     padding-right: 170px;
+    margin-bottom: 88px;
   }
 }
 
@@ -94,17 +89,13 @@
   left: 116px;
   background-color: transparent;
   cursor: pointer;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation__play-button {
+  @media (min-width: @tablet-width) {
     top: 223px;
     left: 300px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .video-presentation__play-button {
+  @media (min-width: @desktop-width) {
     top: 223px;
     left: 376px;
   }

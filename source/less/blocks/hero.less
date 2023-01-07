@@ -7,7 +7,17 @@
   background-color: @black;
   background-image: url("../img/photos/hero-background.jpg");
   background-repeat: no-repeat;
-  background-position: 50% bottom;
+  background-position: 50% 100%;
+  background-size: 280%;
+
+  @media (min-width: @tablet-width) {
+    background-size: 155%;
+    background-position: 50% bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 100%;
+  }
 }
 
 .hero__wrapper {

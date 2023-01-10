@@ -99,6 +99,7 @@
 }
 
 .advantage__text-base {
+  position: relative;
   padding: 25px 33px 27px;
 
 
@@ -116,11 +117,25 @@
 }
 
 .advantage:not(:last-child) .advantage__text-base {
-  border-bottom: 1px solid #d6d6d6;
+  // border-bottom: 1px solid #d6d6d6;
   padding-bottom: 24px;
 
+  // @media (min-width: @tablet-width) {
+  //   border-bottom: none;
+  // }
+}
+
+.advantage:not(:last-child) .advantage__text-base::after {
+  content: "";
+  position: absolute;
+  width: 284px;
+  height: 1px;
+  left: 18px;
+  bottom: -1px;
+  background-color: #d6d6d6;
+
   @media (min-width: @tablet-width) {
-    border-bottom: none;
+    display: none;
   }
 }
 

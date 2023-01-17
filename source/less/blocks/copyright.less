@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+.copyright__link:focus-visible {
+  outline: none;
+}
+
 .copyright__text {
   font-weight: 400;
   color: @black;
@@ -21,11 +25,11 @@ a:hover .copyright__icon {
   fill: @light-blue;
 }
 
-a:active .copyright__text {
+a:focus .copyright__text {
   color: #b3b3b3;
 }
 
-a:active .copyright__icon {
+a:focus .copyright__icon {
   fill: #b3b3b3;
 }
 

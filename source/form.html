@@ -16,9 +16,7 @@
   <div class="page-container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <div class="page-header__logo-pic">
-          <img src="img/vectors/logo.svg" width="185" height="96" alt="лого города Седона.">
-        </div>
+        <img class="page-header__logo-pic" src="img/vectors/logo.svg" width="185" height="96" alt="лого города Седона.">
       </a>
       <nav class="header-nav header-nav--closed  header-nav--nojs">
 
@@ -57,21 +55,23 @@
           достопримечательностях</p>
       </section>
       <section class="form">
+        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="form-data" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="form-data__fieldset fieldset">
-            <legend class="fieldset__title">Представьтесь:</legend>
+            <div class="fieldset__title">Представьтесь:</div>
             <ul class="fieldset__list">
               <li class="fieldset__item">
-                <label class="fieldset__label">Имя<sup>*</sup>:</label>
-                <input class="fieldset__input" type="text" name="name" placeholder="Пётр">
+                <label class="fieldset__label" for="name">Имя<sup>*</sup>:</label>
+                <input class="fieldset__input" type="text" id="name" name="name" placeholder="Пётр">
               </li>
               <li class="fieldset__item">
-                <label class="fieldset__label">Фамилия<sup>*</sup>:</label>
-                <input class="fieldset__input" type="text" name="family-name" placeholder="Пустота">
+                <label class="fieldset__label" for="family-name">Фамилия<sup>*</sup>:</label>
+                <input class="fieldset__input" type="text" id="family-name" name="family-name" placeholder="Пустота">
               </li>
               <li class="fieldset__item">
-                <label class="fieldset__label">Отчество:</label>
-                <input class="fieldset__input" type="text" name="patronymic-name" placeholder="Викторович">
+                <label class="fieldset__label" for="patronymic-name">Отчество:</label>
+                <input class="fieldset__input" type="text" id="patronymic-name" name="patronymic-name"
+                  placeholder="Викторович">
               </li>
             </ul>
           </fieldset>
@@ -81,7 +81,7 @@
               <li class="fieldset__item">
                 <label class="fieldset__label" for="phone">Контактный телефон<sup>*</sup>:</label>
                 <div class="fieldset__input-phone">
-                  <input class="fieldset__input fieldset__input-short" id="phone" type="text" name="phone"
+                  <input class="fieldset__input fieldset__input-short" id="phone" type="tel" name="phone"
                     placeholder="Введите телефон">
                   <svg class="fieldset__input-icon" width="18" height="18" aria-label="Иконка телефона">
                     <use href="img/sprite.svg#phone"></use>
@@ -91,7 +91,7 @@
               <li class="fieldset__item">
                 <label class="fieldset__label" for="email">Электронная почта<sup>*</sup>:</label>
                 <div class="fieldset__input-email">
-                  <input class="fieldset__input fieldset__input-short" id="email" type="text" name="email"
+                  <input class="fieldset__input fieldset__input-short" id="email" type="email" name="email"
                     placeholder="Введите e-mail">
                   <svg class="fieldset__input-icon" width="16" height="12" aria-label="Иконка почты">
                     <use href="img/sprite.svg#mail"></use>
@@ -101,7 +101,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-data__fieldset fieldset fieldset--wide">
-            <legend class="fieldset__title fieldset__title--radio">Ваше общее впечатление:</legend>
+            <div class="fieldset__title fieldset__title--radio">Ваше общее впечатление:</div>
             <ul class="fieldset__list fieldset__list--wide">
               <li class="fieldset__item fieldset__item--radio">
                 <label class="fieldset__label radio">
@@ -124,7 +124,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-data__fieldset fieldset fieldset--wide">
-            <legend class="fieldset__title fieldset__title--checkbox">Посещенные<br>достопримечательности:</legend>
+            <h2 class="fieldset__title fieldset__title--checkbox">Посещенные<br>достопримечательности:</h2>
             <ul class="fieldset__list fieldset__list--wider">
               <li class="fieldset__item fieldset__item--checkbox">
                 <label class="fieldset__label checkbox">
@@ -153,7 +153,7 @@
             </ul>
           </fieldset>
           <fieldset class="form-data__feedback feedback">
-            <legend class="feedback__title">Опишите свои эмоции:</legend>
+            <h2 class="feedback__title">Опишите свои эмоции:</h2>
             <label class="visually-hidden" for="feedback">Обратная связь</label>
             <textarea class="feedback__input" name="feedback" rows="4" placeholder="Опишите подробно все свои восторги"
               id="feedback"></textarea>
@@ -187,9 +187,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="Канал HTML Academy на YouTube">
-                <svg class="social__link" width="20" height="14" aria-label="Канал HTML Academy на YouTube">>
+              <a class="social__icon" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__link" width="20" height="14" aria-label="Канал HTML Academy на YouTube">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -199,15 +198,15 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__icon" width="27" height="35" aria-label=“Логотип html-Academy>
+            <svg class="copyright__icon" width="27" height="35" aria-label="Логотип html-Academy">
               <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-container__close">
-      <div class="modal modal__block">
+    <div class="modal-container modal-block modal-container--close">
+      <div class="modal-block__warning modal">
         <section class="modal__content">
           <h2 class="modal__title">Что-то пошло не так!</h2>
           <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -216,15 +215,15 @@
       </div>
     </div>
 
-    <div class="modal-container modal-container__close">
-      <div class="modal modal--feedback modal__block modal__block--feedback">
+    <div class="modal-container modal-block modal-container--close">
+      <div class="modal-block__feedback modal">
         <section class="modal__content">
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
           <p class="modal__message modal__message--feedback">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
             <br>В ближайшее время мы опубликуем его на сайте.
           </p>
         </section>
-        <div class="modal__footer modal__footer--feedback">
+        <div class="modal__footer">
           <button class="modal__button modal__button--feedback">Закрыть окно</button>
         </div>
       </div>

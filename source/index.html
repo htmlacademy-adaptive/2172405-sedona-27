@@ -10,6 +10,8 @@
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -53,15 +55,15 @@
       </div>
       <section class="advantages">
         <div class="advantages__wrapper">
-          <div class="advantages__intro">
-            <h2 class="advantage__title advantage__title--intro">Седона – небольшой городок в
+          <div class="advantages__intro advantage">
+            <h2 class="advantage__title advantage__title--intro">Седона — небольшой городок в
               Аризоне, заслуживающий большего!</h2>
             <p class="advantage__message">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           <ul class="advantages__list">
             <li class="advantages__item advantage advantage--wide-services">
-              <div class="advantage__colored">
-                <div class="advantage__text advantage__text--decorated">
+              <div class="advantage__extended">
+                <div class="advantage__text advantage__text--colored advantage__text--decorated">
                   <h3 class="advantage__title">Настоящий<br> городок</h3>
                   <p class="advantage__number"> — №1 —</p>
                   <p class="advantage__description">Седона не аттракцион для
@@ -142,38 +144,34 @@
                     alt="фото моста дьявола.">
                 </picture>
               </div>
-              <div class="advantage__colored">
-                <div class="advantage__text">
-                  <h3 class="advantage__title">Там есть<br> мост дьявола</h3>
-                  <p class="advantage__number"> — №2 —</p>
-                  <p class="advantage__description">Да, по нему можно пройти! Если вы
-                    осмелитесь, конечно </p>
-                </div>
+              <div class="advantage__text advantage__text--colored">
+                <h3 class="advantage__title">Там есть<br> мост дьявола</h3>
+                <p class="advantage__number"> — №2 —</p>
+                <p class="advantage__description">Да, по нему можно пройти! Если вы
+                  осмелитесь, конечно </p>
               </div>
             </li>
-            <ul class="advantages__base">
-              <li class="advantages__item advantage">
-                <div class="advantage__text advantage__text-base">
-                  <h3 class="advantage__title">Небольшая<br> площадь</h3>
-                  <p class="advantage__number"> — №3 —</p>
-                  <p class="advantage__description">Все интересные места находятся очень близко</p>
-                </div>
-              </li>
-              <li class="advantages__item advantage">
-                <div class="advantage__text advantage__text-base">
-                  <h3 class="advantage__title">Красивая<br> дорога</h3>
-                  <p class="advantage__number"> — №4 —</p>
-                  <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
-                </div>
-              </li>
-              <li class="advantages__item advantage">
-                <div class="advantage__text advantage__text-base">
-                  <h3 class="advantage__title">Мало<br> туристов</h3>
-                  <p class="advantage__number"> — №5 —</p>
-                  <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
-                </div>
-              </li>
-            </ul>
+            <li class="advantages__item advantage advantage--base">
+              <div class="advantage__text advantage__text-base">
+                <h3 class="advantage__title">Небольшая<br> площадь</h3>
+                <p class="advantage__number"> — №3 —</p>
+                <p class="advantage__description">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item advantage advantage--alternate advantage--base">
+              <div class="advantage__text advantage__text-base">
+                <h3 class="advantage__title">Красивая<br> дорога</h3>
+                <p class="advantage__number"> — №4 —</p>
+                <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем <br>не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantage advantage--base">
+              <div class="advantage__text advantage__text-base">
+                <h3 class="advantage__title">Мало<br> туристов</h3>
+                <p class="advantage__number"> — №5 —</p>
+                <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -212,9 +210,8 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="Канал HTML Academy на YouTube">
-                <svg class="social__link" width="20" height="14" aria-label="Канал HTML Academy на YouTube">>
+              <a class="social__icon" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__link" width="20" height="14" aria-label="Канал HTML Academy на YouTube">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -224,7 +221,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__icon" width="27" height="35" aria-label=“Логотип html-Academy>
+            <svg class="copyright__icon" width="27" height="35" aria-label="Логотип html-Academy">
               <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
